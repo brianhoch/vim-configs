@@ -13,6 +13,8 @@ set background=dark
 set nu
 set clipboard=unnamed
 set enc=utf-8
+set softtabstop=4
+set expandtab
 
 "" You probably don't want to change these
 set hidden
