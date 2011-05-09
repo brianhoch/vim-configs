@@ -8,8 +8,11 @@ call pathogen#helptags()
 " Okay, you can start changing stuff now
 " Basic stuff
 "" Things you might want to change
-colorscheme vividchalk " Default colorscheme
+colorscheme ir_black
 set background=dark
+set nu
+set clipboard=unnamed
+set enc=utf-8
 
 "" You probably don't want to change these
 set hidden
