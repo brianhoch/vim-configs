@@ -21,8 +21,6 @@ set enc=utf-8
 set softtabstop=4
 set expandtab
 
-set encoding=utf-8
-
 "" You probably don't want to change these
 set hidden
 syntax on
