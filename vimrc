@@ -8,13 +8,18 @@ call pathogen#helptags()
 " Okay, you can start changing stuff now
 " Basic stuff
 "" Things you might want to change
-colorscheme elflord
 if has ('gui_running')
   colorscheme ir_black
   set lines=30 columns=80
   set guifont=Monaco:h12
 endif
+colorscheme ir_black
 set background=dark
+set nu
+set clipboard=unnamed
+set enc=utf-8
+set softtabstop=4
+set expandtab
 
 set encoding=utf-8
 
