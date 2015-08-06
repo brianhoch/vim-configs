@@ -18,7 +18,12 @@ set softtabstop=4
 set expandtab
 
 "" UltiSnips settings
-" UltiSnipsUsePythonVersion = 2
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsEditSplit="vertical"
 
 "------------------------------------------
 " Okay, you can start changing stuff now
