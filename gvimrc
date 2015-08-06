@@ -8,6 +8,7 @@ set incsearch
 syntax on
 " Brian stuff
 set encoding=utf-8
-colorscheme vividchalk
 " MacVim font, not shipped with Gvim
-set guifont=Menlo\ Regular:h14
+set guifont=Menlo\ Regular:h12
+" set guifont=Consolas:h13
+set lines=30 columns=80
