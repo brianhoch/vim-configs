@@ -32,12 +32,12 @@ let g:UltiSnipsEditSplit="vertical"
 set laststatus=2
 
 "" Color scheme
+set background=dark
 if has('gui_running')
-    set background=dark
+  colorscheme solarized
 else
-    set background=light
-end if
-colorscheme solarized
+  colorscheme elflord
+endif
 
 "" These affect viewports
 "" Split windows equally
