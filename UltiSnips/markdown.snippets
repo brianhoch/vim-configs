@@ -28,23 +28,23 @@ snippet ln "Hyperlink"
 [${1:Label}](${2:url}) $0
 endsnippet
 
-snippet yml "YAML frontmatter" b
+snippet yjkl "YAML front for Jekyll posts" b
 ---
 title: $1
 date: ${2:`date +%Y-%m-%d`}
 categories: $3
 tags: $4
 ---
-# $1 #
+# $1 - $2 #
 $0
 endsnippet
 
-snippet yjour "YAML front for journal" b
+snippet ydoc "YAML front for document" b
 ---
 title: $1
 date: ${2:`date +%Y-%m-%d`}
-categories: $3
-tags: $4
+purpose: $3
+keywords: $4
 ---
 # $1 - $2 #
 $0
