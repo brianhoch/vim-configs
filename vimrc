@@ -14,7 +14,7 @@ set nocompatible
 set nu
 set clipboard=unnamed
 set enc=utf-8
-set softtabstop=4
+set softtabstop=2
 set expandtab
 
 "" UltiSnips settings
@@ -32,12 +32,12 @@ let g:UltiSnipsEditSplit="vertical"
 set laststatus=2
 
 "" Color scheme
+set background=dark
 if has('gui_running')
-    set background=dark
+  colorscheme solarized
 else
-    set background=light
-end if
-colorscheme solarized
+  colorscheme elflord
+endif
 
 "" These affect viewports
 "" Split windows equally
