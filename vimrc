@@ -14,7 +14,7 @@ set nocompatible
 set nu
 set clipboard=unnamed
 set enc=utf-8
-set softtabstop=2
+set softtabstop=4
 set expandtab
 
 "" UltiSnips settings
