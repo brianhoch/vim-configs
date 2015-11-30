@@ -32,10 +32,23 @@ snippet yjkl "YAML front for Jekyll posts" b
 ---
 title: $1
 date: ${2:`date +%Y-%m-%d`}
+layout: post
+author: Brian
 categories: $3
 tags: $4
 ---
-# $1 - $2 #
+$0
+endsnippet
+
+
+snippet yjrn "YAML front for Jekyll journal posts" b
+---
+title: $1
+date: ${2:`date +%Y-%m-%d`}
+layout: post
+categories: $3
+tags: $4
+---
 $0
 endsnippet
 
