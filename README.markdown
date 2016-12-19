@@ -3,12 +3,12 @@
 A collection of vim plugins bundled up all nice and pretty.
 
 ## Basic Information ##
-------------
+
 This setup makes extensive use of the [`pathogen`](http://github.com/tpope/vim-pathogen) plugin from Tim Pope.
 Additionally, it tries to use git submodules where appropriate so you always have the latest "vendor" plugin.
 
 ## First time usage ##
-----------------
+
 If you have an existing .vim directory move it out of the way for now and backup your .vimrc.
 
 Check out the repo in your home directory like so:
@@ -24,7 +24,6 @@ git submodule update
 This clones the repo, sets up a symlink to the vimrc inside, and pulls down all the submodules to be used.
 
 ## Customization ##
--------------
 
 Be careful changing anything in vimrc (especially the pathogen setup) unless you know what you're doing.
 
