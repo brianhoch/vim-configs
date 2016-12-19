@@ -70,14 +70,11 @@ When using a gui this setup uses the [`solarized`](https://github.com/altercatio
 [`bundle/ultisnips`](https://github.com/SirVer/ultisnips.git)
 [`bundle/vim-airline`](https://github.com/vim-airline/vim-airline.git)
 [`bundle/vim-colors-solarized`](https://github.com/altercation/vim-colors-solarized.git)
+[`bundle/vim-fugitive`](http://github.com/tpope/vim-fugitive.git)
 [`bundle/vim-markdown`](http://github.com/tpope/vim-markdown.git)
 [`bundle/vim-snippets`](https://github.com/honza/vim-snippets.git)
-[`bundle/vim-surround`](https://github.com/honza/vim-snippets.git)
+[`bundle/vim-surround`](https://github.com/tpope/vim-surround.git)
 [`bundle/vividchalk`](http://github.com/tpope/vim-vividchalk.git)
-
-## Submodules to add ##
-
-[`bundle/vim-fugitive`](http://github.com/tpope/vim-fugitive.git)
 
 ## Submodules to consider ##
 
