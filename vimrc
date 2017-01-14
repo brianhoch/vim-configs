@@ -56,6 +56,8 @@ let g:airline_symbols.whitespace = 'Ξ'
 set background=dark
 if has('gui_running')
   colorscheme solarized
+  set guifont=Menlo\ Regular:h16
+  set lines=30 columns=80
 else
   colorscheme elflord
 endif
