@@ -9,13 +9,14 @@ Additionally, it tries to use git submodules where appropriate so you always hav
 
 ## First time usage ##
 
-If you have an existing .vim directory move it out of the way for now and backup your .vimrc.
+If you have an existing .vim directory move it out of the way for now and backup your .vimrc and .gvimrc.
 
 Check out the repo in your home directory like so:
 
 ```
 git clone http://github.com/brianhoch/vim-configs.git .vim
 ln -s .vim/vimrc .vimrc
+ls -s .vim/gvimrc .gvimrc
 cd .vim
 git submodule init
 git submodule update
