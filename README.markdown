@@ -16,7 +16,7 @@ Check out the repo in your home directory like so:
 ```
 git clone http://github.com/brianhoch/vim-configs.git .vim
 ln -s .vim/vimrc .vimrc
-ls -s .vim/gvimrc .gvimrc
+ln -s .vim/gvimrc .gvimrc
 cd .vim
 git submodule init
 git submodule update
