@@ -52,6 +52,21 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+" ALE settings
+let g:airline#extensions#ale#enabled = 1
+let g:ale_linters_explicit = 1
+let g:ale_list_window_size = 5
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\   'markdown': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
+
 " Color scheme
 set background=dark
 if has('gui_running')
@@ -66,4 +81,3 @@ endif
 "" New vertical splits to the right of current
 "" New horizontal splits below current
 " set splitright splitbelow
-
