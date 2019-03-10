@@ -18,7 +18,8 @@ set softtabstop=2
 set expandtab
 
 "" UltiSnips settings
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
@@ -27,6 +28,14 @@ let g:UltiSnipsEditSplit="vertical"
 
 "------------------------------------------
 " Okay, you can start changing stuff now
+
+set textwidth=72
+" Highlight column 72
+if exists('+colorcolumn')
+  set colorcolumn=+1
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>72v.\+', -1)
+endif
 
 " Always show Airline
 set laststatus=2
