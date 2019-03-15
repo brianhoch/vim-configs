@@ -14,6 +14,7 @@ set nocompatible
 set nu
 set clipboard=unnamed
 set enc=utf-8
+set expandtab
 set tabstop=2
 set shiftwidth=2
 
