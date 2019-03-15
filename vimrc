@@ -29,6 +29,12 @@ let g:UltiSnipsEditSplit="vertical"
 "------------------------------------------
 " Okay, you can start changing stuff now
 
+set path+=** "Recursive find file
+set spell spelllang=en_us
+set complete=.,b,u,]
+set wildmode=longest,list:longest
+filetype plugin on
+
 set textwidth=72
 " Highlight column 72
 if exists('+colorcolumn')
@@ -95,14 +101,9 @@ endif
 
 set wildmenu
 
-" Show ends of line in editor
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
-
-if v:version > 703 || v:version == 703 && has("patch541")
-  set formatoptions+=j " Delete comment character when joining commented lines
-endif
+"if v:version > 703 || v:version == 703 && has("patch541")
+"  set formatoptions+=j " Delete comment character when joining commented lines
+"endif
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
