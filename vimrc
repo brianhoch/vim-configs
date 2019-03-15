@@ -14,8 +14,8 @@ set nocompatible
 set nu
 set clipboard=unnamed
 set enc=utf-8
-set softtabstop=2
-set expandtab
+set tabstop=2
+set shiftwidth=2
 
 "" UltiSnips settings
 " Trigger configuration. Do not use <tab> if you use
@@ -31,9 +31,8 @@ let g:UltiSnipsEditSplit="vertical"
 
 set path+=** "Recursive find file
 set spell spelllang=en_us
-set complete=.,b,u,]
-set wildmode=longest,list:longest
-filetype plugin on
+set complete=.,w,b,u,],kspell
+"set wildmode=longest,list:longest
 
 set textwidth=72
 " Highlight column 72
@@ -53,18 +52,20 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 "" Symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+let g:airline_left_sep = ''
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+let g:airline_right_sep = ''
 let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
 let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
 " ALE settings
@@ -93,6 +94,11 @@ endif
 
 "" Steals from tpope's 'vim-sensible'...
 "" https://github.com/tpope/vim-sensible/
+
+if has ('autocmd')
+  filetype plugin indent on
+endif
+
 set incsearch
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
@@ -101,9 +107,12 @@ endif
 
 set wildmenu
 
+"" Doesn't seem to work in my setup
 "if v:version > 703 || v:version == 703 && has("patch541")
 "  set formatoptions+=j " Delete comment character when joining commented lines
 "endif
+
+set autoread
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
